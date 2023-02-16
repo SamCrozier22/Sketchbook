@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pointless</title>
-    </head>
-    <body style ="background-color:rgb(131, 91, 103)">
-        <h1 style = font-family:fantasy>Make me cry</h1>
-        <img src="AFhouse.png">
-        <p style ="color:rgb(202, 91, 0) "><del>yup. that'll do it</del><ins>Cannot show weakness</ins></p>
-    </body>
-    <form action="/action_page.php" method="get">
-        <input type="radio" id="html" name="fav_band" value="CarSeat">
-        <label for="html">Car seat headrest</label><br>
-        <input type="radio" id="css" name="fav_band" value="MomJeans">
-        <label for="css">mom jeans</label><br>
-        <input type="submit" value="Submit">
-    </form>
+
+<head>
+    <title>Pointless</title>
+</head>
+
+<body style="background-color:rgb(131, 91, 103)">
+    <h1 style=font-family:fantasy>Make me cry</h1>
+    <img src="AFhouse.png">
+    <p style="color:rgb(202, 91, 0)"><del>yup. that'll do it</del><ins>Cannot show weakness</ins></p>
+
+    <script type="text/javascript">
+        var clicks = 0;
+        function onClick() {
+            clicks += 1;
+            document.getElementById("clicks").innerHTML = clicks;
+        };
+    </script>
+    <button type="button" onClick="onClick()">Click me</button>
+    <p2>Clicks: <a id="clicks"></a></p2>
+</body>
+<form action="/action_page.php" method="get">
+    <input type="radio" id="carseat" name="fav_band" value="CarSeat">
+    <label for="carseat">Car seat headrest</label><br>
+    <input type="radio" id="momjeans" name="fav_band" value="MomJeans">
+    <label for="momjeans">mom jeans</label><br>
+    <input type="submit" value="Submit">
+</form>
+
+
 </html>
